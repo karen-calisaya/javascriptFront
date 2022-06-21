@@ -14,6 +14,17 @@ for (let index = 0; index < par.length; index++) {
     element.classList.add('destacadoPar')
 }
 
+/* alternativa a lo anterior */
+let destacado = document.querySelector('p')
+for(let i = 0 ; i < destacado.length; i++){
+    if(i % 2 == 0){
+        destacado[i].classList.add('destacadoPar');
+    }else{
+        destacado[i].classList.add('destacadoImpar');
+    }
+}
+
+
 console.log(main, h2, a, par, impar)
 
 let nombre = prompt('Ingrese su nombre')
